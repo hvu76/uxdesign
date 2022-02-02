@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Maker</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="menu">
+                <a class="response" href="index.html">Home</a>
+            </div>
+            
+            <div class="menu">
+                <a class="response" href="about.html">About</a>
+            </div>
+
+            <!--<div class="menu">
+                <a class="response" href="">Explore</a></a>
+            </div>-->
+
+            <div class="dropdown">
+                <button class="dropbtn">Explore
+                <i class="fas fa-chevron-circle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a class="response" href="http://book.mixu.net/css/">Resource 1</a>
+                  <a class="response" href="http://book.mixu.net/css/">Resource 2</a>
+                  <a class="response" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade">Resource 3</a>
+                </div>
+            </div>
+
+            <!--<div class="dropdown">
+                <button class="dropbtn">Contact
+                <i class="fas fa-chevron-circle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a class="response" href="#">Facebook</a>
+                  <a class="response" href="#">Instagram</a>
+                  <a class="response" href="#">Twitter</a>
+                </div>
+            </div>-->
+        </div>
+    </div> 
+
+
+    <h1>Website Template Generator</h1>
+    <h2>Go ahead and create your own website!</h2>
+
+    <div class="workspace">
+        <div class="miniworkspace box1">
+            <div class="container1">
+                <h3 class="title">Let's choose properties for your page</h3>
+
+                <form id="info-form">
+
+                    <div>
+                        <label for="bg-color">Choose background color</label>
+                        <select id="bg-color" name="bg-color" class="form-control">
+                            <option value="lightgreen">Lightgreen</option>
+                            <option value="pink">Pink</option>
+                            <option value="lightblue">Lightblue</option>
+                            <option value="wheat">Wheat</option>
+                        </select>                                  
+                    </div>
+
+                    <div class="form-group">
+                        <label for="font-color">Add font color</label>
+                        <select id="font-color" name="font-color" class="form-control">
+                            <option value="Black">Black</option>
+                            <option value="White">White</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Red">Red</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="heading">Add a heading</label>
+                        <input type="text" id="heading" name="heading" value="" class="form-control heading">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paragraph1">Add a paragraph</label>
+                        <input type="text" id="para1" name="para1" value="" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subheading">Add a subheading</label>
+                        <input type="text" id="subheading" name="subheading" value="" class="form-control heading">
+                    </div>
+
+
+                    
+
+                    <button type="submit" class="btn btn-secondary">Submit/Publish</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="miniworkspace box2">
+      
+            <div> <h1> <span id = "chosenheading"></span> </h1> </div>
+            <div> <p> <span id = "chosenparagraph1"></span> </p> </div>
+            <div> <h2> <span id = "chosensubheading"></span></div> </h2>
+          
+        
+        </div>
+        <div class="miniworkspace box3">
+            <h2>Display code here</h2>
+            <textarea id = "code" rows = "20" cols = "100"></textarea>
+            </div>
+        
+    </span></div>
+
+    <script src="script.js"></script>
+</div>
+    

@@ -1,0 +1,359 @@
+body{
+    color: #000;
+    background-color: #f4f4f4;
+    transition: /*background-color 100ms linear, color 100ms linear*/ background-color 0.1s;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background:rgb(59, 58, 58);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.container{
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    display: inline-flex;
+}
+
+.right{
+    float: right;
+}
+
+.response{
+    color: white;
+    padding: 23px 30px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.response:hover, .response:active{
+    background-color: #686867;
+    color: white;
+    transition: 0.4s;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;  
+    outline: none;
+    color: white;
+    padding: 23px 30px;
+    background-color: inherit;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #686867;
+    transition: 0.4s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(59, 58, 58);
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+    transition: 0.4s; 
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 5px 30px;
+    display: block;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 0.4s;
+}
+
+
+
+
+#main-div{
+    width: 100%;
+    /*height: 700px;*/
+    /*border: 1px solid black;*/
+}
+
+.panel{
+    min-height: 800px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    font-family: sans-serif;
+    /*border: 1px solid black;*/
+}
+
+.color-one{
+    background-color: #d0fce5;
+}
+.color-two {
+    background-color: #f8e1d3 ;
+}
+.color-three {
+background-color: #c5f8ff ;
+}
+.color-four {
+background-color: #ff0099;
+}
+.color-five {
+background-color: #ff7a00;
+}
+
+
+
+
+h1{
+    text-align: center;
+    margin-top: 120px;
+    font-size: 70px;
+}
+
+.sub-main-div h2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 70px;
+}
+
+.sub-main-div #startbtn{
+    margin: 60px;
+    display: block;
+    text-align: center;
+}
+
+.sub-main-div #startbtn a{
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid rgb(59, 58, 58);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 15px;
+    background-color: rgb(59, 58, 58);
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.sub-main-div #startbtn a:hover {
+    background-color: #686867;
+    transition: 0.3s ease;
+}
+
+
+.sub-img1{
+    width: 100%;
+    height: 100%;
+}
+
+.sub-img2{
+    width: 100%;
+    height: 100%;
+}
+
+.sub-img3{
+    width: 100%;
+    height: 100%;
+}
+
+.image{
+    display: flex;
+    margin-top: 110px;
+}
+
+.img{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.div1{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.item{
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 140px;
+    /*margin-bottom: 90px;*/
+    /*border: 1px solid black;*/
+}
+
+.subdiva{
+    width: 50%;
+    height: 500px;
+}
+.img1{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 100%;
+    height: 500px;
+}
+
+.subdivb{
+    /*border: 1px solid black;*/
+    padding: 20px;
+}
+
+.subdivb h2{
+    width: 600px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 70px;
+}
+
+.subdivb p{
+    width: 600px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 30px;
+}
+
+
+
+.item1{
+    margin-left: 40px;
+    margin-right: 90px;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    /*border: 1px solid black;*/
+}
+
+.subdivc{
+    padding: 20px;
+    width: 47.5%;
+    /*border: 1px solid black;*/
+}
+
+.subdivc h2{
+    width: 600px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 70px;
+}
+
+.subdivc div ul{
+    display: block;
+    margin: 50px auto;
+    text-align: left;
+    font-size: 30px;
+    list-style-position: inside;
+    z-index: 100;
+    
+}
+
+.subdivc div ul li{
+    border: 1px solid transparent /*rgb(0, 8, 114)*/;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 10px;
+    /*background-color: rgb(0, 8, 114);*/
+    /*box-shadow: 0 0 0 0 rgb(97, 32, 158);*/
+    margin-bottom: 50px;
+    background: transparent;
+}
+
+.subdivc div ul li:hover {
+    box-shadow: 0 0 0 10px rgb(97, 32, 158);
+    background-color: rgb(97, 32, 158);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.subdivd{
+    height: 500px;
+}
+
+
+
+
+.div2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item2{
+    /*border: 1px solid black;*/
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.img2{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 700px;
+    height: 600px;
+}
+
+.subdivf h2{
+    margin-right: 30px ;
+    margin-top: 40px;
+    /*border: 1px solid black;*/
+    text-align: center;
+    font-size: 45px;
+    line-height: 70px;
+}
+
+.subdivf ul{
+    margin-top: 40px;
+    margin-right: 30px;
+    /*border: 1px solid black;*/
+    list-style-position: inside;
+    text-align: left;
+    font-size: 30px; 
+    text-indent: -1.4em;
+    padding-left: 2em;
+    line-height: 180%;
+
+}
+
+.subdivf div ul li{
+    border: 1px solid transparent/*rgb(0, 8, 114)*/;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 10px;
+    /*background-color: rgb(0, 8, 114);*/
+    box-shadow: 0 0 0 0 #c5f8ff;
+    margin-bottom: 20px;
+    background: transparent;
+    
+}
+
+.subdivf div ul li:hover {
+    box-shadow: 0 0 0 10px rgb(0, 8, 119);
+    background-color: rgb(0, 8, 119);
+    color: white;
+    transition: 0.3s ease;
+}
+
+
+
